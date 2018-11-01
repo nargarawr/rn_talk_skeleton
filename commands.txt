@@ -1,3 +1,6 @@
+npm install -g react-native-cli
+npm install -g ignite-cli
+
 ignite new DogBooker
 
 Close all previous bundlers
