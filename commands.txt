@@ -1,0 +1,31 @@
+ignite new DogBooker
+
+Close all previous bundlers
+Set version to 0.53.3
+npm install
+lsof -n -i4TCP:8081 && kill -9 XXXX
+react-native upgrade
+rm ./node_modules/react-native/local-cli/core/__fixtures__/files/package.json
+react-native link react-native-device-info
+
+npm install native-base
+ignite generate container ListScreen
+
+Set default root
+
+
+<dict>
+  <key>NSExceptionDomains</key>
+  <dict>
+    <key>localhost</key>
+    <dict>
+      <key>NSExceptionAllowsInsecureHTTPLoads</key>
+      <true/>
+    </dict>
+          <key>craigknott.com</key>
+          <dict>
+              <key>NSExceptionAllowsInsecureHTTPLoads</key>
+              <true/>
+          </dict>
+  </dict>
+</dict>
